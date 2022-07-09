@@ -1,0 +1,409 @@
+body {
+  background-color: #141414;
+  font-family: sans-serif;
+  color: #FFFFFF;
+
+}
+
+
+
+header img {
+  width: auto;
+  height: 40px;
+
+}
+
+header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin: auto;
+}
+
+
+
+main .contenedor {
+  width: 97%;
+  margin-left: auto;
+
+}
+
+header nav a {
+  color: #AAA;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+
+nav a {
+
+  margin-left: 20px;
+  padding-top: 12px;
+  float: left;
+  position: relative;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.719);
+  font-weight: bold;
+}
+
+nav a::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: #444;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  transition: width 0.2s;
+}
+
+nav a:hover::before {
+  width: 100%;
+
+}
+
+nav a:hover,
+nav a.active {
+  color: #FFFFFF;
+}
+
+
+
+
+
+/* portada */
+main .cover {
+  font-size: 16px;
+  min-height: 40.62em;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://www.themoviedb.org/t/p/original/vgGJ9ThoKjFbQHbAeI29NsbT2lK.jpg);
+
+  color: white;
+  background-size: cover;
+  background-position: top ;
+
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+
+.cover .contenedor {
+  margin-bottom: 6.25em;
+}
+
+.cover .contenedor .titulo {
+  font-weight: bold;
+  font-size: 2.12em;
+  margin-bottom: 0.4em;
+}
+
+.cover .contenedor .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.cover .boton {
+  background: rgba(0, 0, 0, 0.50);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #FFFFFF;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+}
+
+.cover .contenedor i {
+  margin-right: 1.25em;
+}
+
+.cover .contenedor .boton:hover {
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+
+section .titulo:first-child {
+  padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+  padding-left: 8px;
+}
+
+main img:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+  transform: scale(1.35);
+  transition: all 500ms;
+
+
+}
+
+section img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  text-align: start;
+  cursor: pointer;
+
+
+
+}
+
+.pie-pagina {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  margin: auto;
+  max width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+}
+
+.red-social img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.pie-pagina .grupo-2 {
+  background-color: #141414;
+  padding: 15px 10px;
+  text-align: center;
+  color: White;
+}
+
+
+
+
+footer h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* animacion hover en el footer */
+footer .red-social img:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+  transform: scale(1.15);
+  transition: all 500ms;
+}
+
+/* esto sirve para convertir los div con imagenes en un carrusel  */
+.animes_nuevos,
+.destacadas,
+.series_nuevas,
+.peliculas_nuevas {
+  display: flex;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+}
+
+/* scroll personalizado */
+
+::-webkit-scrollbar {
+  height: 12px;
+
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 53, 53);
+  height: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+
+.titulo {
+  padding-top: 100px;
+}
+
+
+
+section {
+  padding-bottom: 50px;
+}
+
+
+
+/*------------------ Media Queries ---------------------------*/
+
+
+@media screen and (max-width: 800px) {
+  header .contenedor img {
+    margin-bottom: 10px;
+    height: 30px;
+
+  }
+
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  header .comtenedor a {
+    font-size: 12px;
+  }
+
+  header .contenedor a {
+    padding: 2px;
+    justify-content: center;
+  }
+
+  section .cover {
+    font-size: 14px;
+  }
+
+  .cover .contenedor .descripcion {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .cover .contenedor .titulo {
+    font-size: 18px;
+
+  }
+
+  section img {
+    width: 180px;
+    height: 125px;
+  }
+
+  section .titulo {
+    padding-top: 5px;
+
+  }
+
+
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+
+  }
+
+  header .contenedor {
+
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+
+
+
+  header nav {
+    padding-left: 20px;
+  }
+
+  section {
+    padding: 0px;
+  }
+
+
+  section .cover .contenedor.boton {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  section .titulo:last-child {
+    padding-bottom: 60px;
+  }
+
+
+
+
+
+  .pie-pagina .grupo-1 .box figure img {
+    width:90px;
+   
+
+
+  }
+
+  .red-social img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pie-pagina .grupo-2 {
+    background-color: #141414;
+    padding: 7px 5px;
+    text-align: center;
+    color: White;
+  }
+  
+
+  .pie-pagina .grupo-1 {
+    width: 80%;
+    margin: auto;
+    max width: 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-gap: 10px;
+    padding: 25px 0px;
+  
+  }
+  .pie-pagina .grupo-1 .box figure {
+    margin-left:8px ;
+  }
+  
+}

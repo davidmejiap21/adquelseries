@@ -30,11 +30,7 @@ header .contenedor {
 
 
 
-main .contenedor {
-  width: 97%;
-  margin-left: auto;
 
-}
 
 header nav a {
   color: #AAA;
@@ -79,102 +75,118 @@ nav a.active {
   color: #FFFFFF;
 }
 
+/*   main pagina */
 
-
-
-
-/* portada */
-main .cover {
-  font-size: 16px;
-  min-height: 40.62em;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://www.formulatv.com/images/series/2000/2815-f.jpg);
-
-  color: white;
-  background-size: cover;
-  background-position: top;
-
-  margin-bottom: 3.12em;
+section .contenedor {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+ 
+ 
 }
 
-.cover .contenedor {
-  margin-bottom: 6.25em;
+section .contenedor .descripcion {
+  display: flex;
+
+}
+section .contenedor h1{
+  border-top:solid ;
+border-top-style:outset;
+border-width: 0.01px ;
+padding-top:21.24px ;
+text-align: start;
 }
 
-.cover .contenedor .titulo {
-  font-weight: bold;
-  font-size: 3.12em;
-  margin-bottom: 0.4em;
+
+section .contenedor img {
+  margin: 25px;
+  width: 160px;
+  height: 220px;
+
 }
 
-.cover .contenedor .descripcion {
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.75em;
-  max-width: 50%;
-  margin-bottom: 1.25em;
+section .contenedor .img {
+  width: 30%;
 }
 
-.cover .boton {
+section .contenedor .texto {
+  width: 70%;
+  text-align: start;
+}
+
+section .contenedor .texto h1{
+  text-align: start;
+
+
+}
+section .contenedor h1,
+ul,
+li {
+  text-align: center;
+  list-style: none;
+  align-items: center;
+  
+
+
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+padding-bottom: 20px;
+
+}
+section .pasarcapitulos{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+padding-bottom: 50px;
+}
+section a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+section .pasarcapitulos .boton {
   background: rgba(0, 0, 0, 0.50);
   border: none;
-  border-radius: 0.31em;
+  border-radius: 0px;
   padding: 0.93em 1.87em;
   color: #FFFFFF;
   margin-right: 1.25em;
   cursor: pointer;
   transition: .3s ease all;
   font-size: 1.12em;
+  width: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+
+
 }
 
-.cover .contenedor i {
-  margin-right: 1.25em;
-}
+section .contenedor{
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.50);
 
-.cover .contenedor .boton:hover {
+}
+section .pasarcapitulos .boton:hover {
   background-color: #FFFFFF;
   color: #000;
 }
 
-
-section .titulo:first-child {
-  padding-top: 0px;
+section .pasarcapitulos{
+  border-top: gray solid ;
+  border-top-style:outset;
+  border-width: 0.01px ;
 }
 
+/*    Pie de pagina */
 
-
-
-
-
-
-
-
-
-
-h3 {
-  padding-left: 8px;
-}
-
-main img:hover {
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
-  transform: scale(1.35);
-  transition: all 500ms;
-
-
-}
-
-section img {
-  height: 200px;
-  width: 300px;
-  padding: 10px;
-  text-align: start;
-  cursor: pointer;
-
-
-
-}
 
 .pie-pagina {
   width: 100%;
@@ -222,7 +234,6 @@ section img {
 
 
 
-
 footer h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -238,49 +249,9 @@ footer .red-social img:hover {
   transition: all 500ms;
 }
 
-/* esto sirve para convertir los div con imagenes en un carrusel  */
-.animes_nuevos,
-.destacadas,
-.series_nuevas,
-.peliculas_nuevas {
-  display: flex;
-  flex-wrap: wrap;
-
-
-}
-
-/* scroll personalizado */
-
-::-webkit-scrollbar {
-  height: 12px;
 
 
 
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(54, 53, 53);
-  height: 10px;
-  border-radius: 5px;
-
-}
-
-
-
-
-.titulo {
-  padding-top: 100px;
-}
-
-
-
-section {
-  padding-bottom: 50px;
-}
-
-
-
-/*------------------ Media Queries ---------------------------*/
 
 
 @media screen and (max-width: 800px) {
@@ -289,56 +260,6 @@ section {
     height: 30px;
 
   }
-
-
-  header .contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-
-
-  header .comtenedor a {
-    font-size: 12px;
-  }
-
-  header .contenedor a {
-    padding: 2px;
-    justify-content: center;
-  }
-
-  section .cover {
-    font-size: 14px;
-  }
-
-  .cover .contenedor .descripcion {
-    font-size: 14px;
-    max-width: 90%;
-  }
-
-  .cover .contenedor .titulo {
-    font-size: 18px;
-
-  }
-
-section .destacadas{
-  
-  justify-content: center;
-}
-  
-
-  section img {
-    
-    height: 190px;
-    width: 290px;
-    padding: 10px;
-   
-  }
-
-  section .titulo {
-    padding-top: 5px;
-
-  }
-
 
   header {
     padding-top: 30px;
@@ -360,26 +281,57 @@ section .destacadas{
     padding-left: 20px;
   }
 
-  
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
 
 
-  section .cover .contenedor.boton {
-    display: flex;
 
+
+  header .contenedor a {
+    padding: 2px;
     justify-content: center;
   }
 
-  section .titulo:last-child {
-    padding-bottom: 60px;
+  .contenedor img {
+    width: 100px;
+    height: 140px;
   }
 
+  section .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+   
+   
+  }
 
+  section h1{
+    font-size: 16px;
 
+  }
+section .contenedor .img {
+  width: 60%;
+}
 
+section .contenedor .texto {
+  width: 50%;
+  text-align: start;
+}
+  footer {
+    font-size: 12px;
+
+  }
 
   .pie-pagina .grupo-1 .box figure img {
-    width:90px;
-   
+    width: 90px;
+
 
 
   }
@@ -395,7 +347,7 @@ section .destacadas{
     text-align: center;
     color: White;
   }
-  
+
 
   .pie-pagina .grupo-1 {
     width: 80%;
@@ -406,18 +358,15 @@ section .destacadas{
     text-align: center;
     grid-gap: 10px;
     padding: 25px 0px;
-  
+
   }
+
   .pie-pagina .grupo-1 .box figure {
-    margin-left:8px ;
+    margin-left: 8px;
   }
-  
 
-
-
-  footer{
-    font-size: 12px;
-    
+  footer {
+    font-size: 12px
   }
-  
+
 }

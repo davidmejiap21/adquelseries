@@ -88,7 +88,7 @@ main .cover {
   font-size: 16px;
   min-height: 40.62em;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://www.formulatv.com/images/series/2000/2815-f.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://cdn.glitch.global/c973d012-32ca-43fc-9b10-2384f5f57a6d/confused-robot.jpg?v=1657664818476);
 
   color: white;
   background-size: cover;
@@ -99,8 +99,18 @@ main .cover {
   align-items: end;
 }
 
+
+section .cover .contenedor .titulo {
+  font-weight: bold;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+
+
+}
+
 .cover .contenedor {
   margin-bottom: 6.25em;
+
 }
 
 .cover .contenedor .titulo {
@@ -244,8 +254,9 @@ footer .red-social img:hover {
 .series_nuevas,
 .peliculas_nuevas {
   display: flex;
-  flex-wrap: wrap;
 
+  overflow-x: scroll;
+  overflow-y: hidden;
 
 }
 
@@ -283,62 +294,13 @@ section {
 /*------------------ Media Queries ---------------------------*/
 
 
+
 @media screen and (max-width: 800px) {
   header .contenedor img {
     margin-bottom: 10px;
     height: 30px;
 
   }
-
-
-  header .contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-
-
-  header .comtenedor a {
-    font-size: 12px;
-  }
-
-  header .contenedor a {
-    padding: 2px;
-    justify-content: center;
-  }
-
-  section .cover {
-    font-size: 14px;
-  }
-
-  .cover .contenedor .descripcion {
-    font-size: 14px;
-    max-width: 90%;
-  }
-
-  .cover .contenedor .titulo {
-    font-size: 18px;
-
-  }
-
-section .destacadas{
-  
-  justify-content: center;
-}
-  
-
-  section img {
-    
-    height: 190px;
-    width: 290px;
-    padding: 10px;
-   
-  }
-
-  section .titulo {
-    padding-top: 5px;
-
-  }
-
 
   header {
     padding-top: 30px;
@@ -360,7 +322,50 @@ section .destacadas{
     padding-left: 20px;
   }
 
-  
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  header .comtenedor a {
+    font-size: 12px;
+  }
+
+  header .contenedor a {
+    padding: 2px;
+    justify-content: center;
+  }
+
+  section .cover .contenedor h1 {
+    font-size: 14px;
+  }
+
+  .cover .contenedor .descripcion {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .cover .contenedor .titulo {
+    font-size: 18px;
+
+  }
+
+  section img {
+    width: 180px;
+    height: 125px;
+  }
+
+  section .titulo {
+    padding-top: 5px;
+
+  }
+
+
+  section {
+    padding: 0px;
+  }
 
 
   section .cover .contenedor.boton {
@@ -375,11 +380,14 @@ section .destacadas{
 
 
 
+  footer {
+    font-size: 12px;
 
+  }
 
   .pie-pagina .grupo-1 .box figure img {
-    width:90px;
-   
+    width: 90px;
+
 
 
   }
@@ -395,7 +403,7 @@ section .destacadas{
     text-align: center;
     color: White;
   }
-  
+
 
   .pie-pagina .grupo-1 {
     width: 80%;
@@ -406,18 +414,15 @@ section .destacadas{
     text-align: center;
     grid-gap: 10px;
     padding: 25px 0px;
-  
+
   }
+
   .pie-pagina .grupo-1 .box figure {
-    margin-left:8px ;
+    margin-left: 8px;
   }
-  
 
+footer{
+  font-size: 12px
+}
 
-
-  footer{
-    font-size: 12px;
-    
-  }
-  
 }

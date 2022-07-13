@@ -244,9 +244,7 @@ footer .red-social img:hover {
 .series_nuevas,
 .peliculas_nuevas {
   display: flex;
-
-  overflow-x: scroll;
-  overflow-y: hidden;
+  flex-wrap: wrap;
 
 }
 
@@ -282,6 +280,7 @@ section {
 
 
 /*------------------ Media Queries ---------------------------*/
+
 
 
 @media screen and (max-width: 800px) {
@@ -321,9 +320,18 @@ section {
 
   }
 
+section .destacadas{
+  
+  justify-content: center;
+}
+  
+
   section img {
-    width: 180px;
-    height: 125px;
+    
+    height: 190px;
+    width: 290px;
+    padding: 10px;
+   
   }
 
   section .titulo {
@@ -352,9 +360,7 @@ section {
     padding-left: 20px;
   }
 
-  section {
-    padding: 0px;
-  }
+  
 
 
   section .cover .contenedor.boton {
@@ -404,6 +410,14 @@ section {
   }
   .pie-pagina .grupo-1 .box figure {
     margin-left:8px ;
+  }
+  
+
+
+
+  footer{
+    font-size: 12px;
+    
   }
   
 }

@@ -92,7 +92,7 @@ main .cover {
 
   color: white;
   background-size: cover;
-  background-position:  top;
+  background-position: top;
 
   margin-bottom: 3.12em;
   display: flex;
@@ -104,9 +104,10 @@ section .cover .contenedor .titulo {
   font-weight: bold;
   font-size: 3.12em;
   margin-bottom: 0.4em;
-  
-  
+
+
 }
+
 .cover .contenedor {
   margin-bottom: 6.25em;
 
@@ -301,6 +302,26 @@ section {
 
   }
 
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+
+  }
+
+  header .contenedor {
+
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+
+
+
+  header nav {
+    padding-left: 20px;
+  }
+
 
   header .contenedor {
     flex-direction: column;
@@ -317,7 +338,7 @@ section {
     justify-content: center;
   }
 
-  section .cover .contenedor h1{
+  section .cover .contenedor h1 {
     font-size: 14px;
   }
 
@@ -342,26 +363,6 @@ section {
   }
 
 
-  header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: black;
-
-  }
-
-  header .contenedor {
-
-    align-items: center;
-    width: 90%;
-    margin: auto;
-  }
-
-
-
-  header nav {
-    padding-left: 20px;
-  }
-
   section {
     padding: 0px;
   }
@@ -379,11 +380,14 @@ section {
 
 
 
+  footer {
+    font-size: 12px;
 
+  }
 
   .pie-pagina .grupo-1 .box figure img {
-    width:90px;
-   
+    width: 90px;
+
 
 
   }
@@ -399,7 +403,7 @@ section {
     text-align: center;
     color: White;
   }
-  
+
 
   .pie-pagina .grupo-1 {
     width: 80%;
@@ -410,10 +414,15 @@ section {
     text-align: center;
     grid-gap: 10px;
     padding: 25px 0px;
-  
+
   }
+
   .pie-pagina .grupo-1 .box figure {
-    margin-left:8px ;
+    margin-left: 8px;
   }
-  
+
+footer{
+  font-size: 12px
+}
+
 }

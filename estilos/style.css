@@ -12,7 +12,11 @@ header img {
   height: 40px;
 
 }
+header{
+  position: fixed;
+  width: 100%;
 
+}
 header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -300,6 +304,11 @@ section {
     margin-bottom: 10px;
     height: 30px;
 
+  }
+  header{
+    position: relative;
+    width: 100%;
+  
   }
 
   header {

@@ -4,6 +4,11 @@ body {
   color: #FFFFFF;
 
 }
+header{
+  position: fixed;
+  width: 100%;
+
+}
 
 
 
@@ -289,7 +294,11 @@ section {
     height: 30px;
 
   }
-
+  header{
+    position: relative;
+    width: 100%;
+  
+  }
 
   header .contenedor {
     flex-direction: column;

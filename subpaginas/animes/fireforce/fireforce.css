@@ -32,11 +32,7 @@ header .contenedor {
   margin: auto;
 }
 
-header{
-  position: fixed;
-  width: 100%;
 
-}
 
 
 
@@ -160,6 +156,15 @@ section .pasarcapitulos{
   margin-bottom: 20px;
   padding-top: 20px;
 padding-bottom: 50px;
+
+}
+
+
+
+
+section .pasarcapitulos i {
+margin-right: 20px;
+font-size: 20px;
 }
 section a {
   text-decoration: none;
@@ -267,7 +272,6 @@ footer .red-social img:hover {
 
 
 
-
 @media screen and (max-width: 1200px) {
   section .contenedor p {
     font-size: 13px;
@@ -367,10 +371,6 @@ footer .red-social img:hover {
    
    
   }
-  section .pasarcapitulos i {
-    margin-right: 20px;
-    font-size: 20px;
-    }
 
   section h1{
     font-size: 16px;

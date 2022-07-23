@@ -10,7 +10,11 @@ body {
 }
 
 
+header{
+  position: fixed;
+  width: 100%;
 
+}
 header img {
   width: auto;
   height: 40px;
@@ -134,6 +138,7 @@ section .cover .contenedor .titulo {
 
 .cover .contenedor1 i {
   margin-right: 1.25em;
+  
 }
 
 .cover .contenedor1 .boton:hover {
@@ -152,21 +157,28 @@ section .contenedor1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%);
 
   padding-bottom: 60px;
-  padding-top: 60px;
-  border-radius: 10px;
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.50);
+  padding-top: 20px;
+  border-radius: 3px;
+ 
 
 
 }
 
 section .contenedor1 div {
   margin-top: 0px;
-  padding-top: 10px;
+  padding-top: 0px;
   text-align: center;
   padding-bottom: 0px;
 
 }
+section .contenedor1 .tittle {
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-size: 10px;
 
+}
 
 
 
@@ -176,8 +188,8 @@ section .contenedor1 iframe {
   height: 546px;
   max-width: 940px;
   max-height: 546px;
+  border-style:hidden;
 }
-
 
 
 
@@ -189,17 +201,113 @@ section .contenedor1 iframe {
 section .pasarcapitulos .boton {
   background: rgba(0, 0, 0, 0.50);
   border: none;
-  border-radius: 0px;
-  padding: 0.93em 1.87em;
+  border-radius: 5px;
+  padding: 0px;
   color: #FFFFFF;
-  margin-right: 1.25em;
+  margin: 0px;
   cursor: pointer;
   transition: .3s ease all;
-  font-size: 1.12em;
-  width: 30%;
-  height: 50px;
+  font-size: 1em;
+  width: 100%;
+  height: 30px;
 
 }
+section .pasarcapitulos i {
+  padding: 5px;
+}
+
+section .pasarcapitulos a{
+  padding: 0px;
+    width: 90%;
+}
+
+section .pasarcapitulos li{
+  width: calc(95%/1);
+  float: left;
+  text-align: center;
+}
+
+
+
+section .contenedor .titulo {
+  padding-top: 80px;
+  text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+  padding-left: 8px;
+}
+
+main img:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+  transform: scale(1.35);
+  transition: all 500ms;
+
+
+}
+
+section img {
+  height: 150px;
+  width: 250px;
+  padding: 10px;
+  text-align: start;
+  cursor: pointer;
+
+
+
+}
+
+/* esto sirve para convertir los div con imagenes en un carrusel  */
+.animes_nuevos,
+.destacadas,
+.series_nuevas,
+.peliculas_nuevas {
+  display: flex;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+}
+
+/* scroll personalizado */
+
+::-webkit-scrollbar {
+  height: 12px;
+
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 53, 53);
+  height: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+
+.titulo {
+  padding-top: 100px;
+}
+
+
+
+section {
+  padding-bottom: 50px;
+}
+
 
 section .pasarcapitulos .boton:hover {
   background-color: #FFFFFF;
@@ -216,6 +324,7 @@ section .pasarcapitulos li {
 h3 {
   padding-left: 8px;
 }
+
 
 
 
@@ -305,7 +414,7 @@ footer .red-social img:hover {
 
 
 .titulo {
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 
@@ -325,6 +434,11 @@ section {
     margin-bottom: 10px;
     height: 30px;
 
+  }
+  header{
+    position: relative;
+    width: 100%;
+  
   }
 
   main .cover{
@@ -387,22 +501,48 @@ section {
     flex-direction: column;
     align-content: center;
     background-color: #141414;
-    align-items: center;
+    
     font-size: 12px;
 
   }
 
   section .contenedor1 .pasarcapitulos .boton {
 
-    width: 30%;
-    height: 60px;
+    width: 10%;
+    height: 30px;
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
+    font-size: 15px;
+    
 
 
 
   }
+  section .contenedor1 .pasarcapitulos .boton {
 
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    margin: 10px;
+    font-size: 15px;
+    
+
+
+
+  }
+  section .contenedor .titulo {
+    padding-top: 10px;
+  
+  }
+
+  section .contenedor1 .pasarcapitulos span {
+
+    font-size: 0px;
+    
+
+
+
+  }
   section .contenedor1 .pasarcapitulos ul {
     padding: 0px;
   }
@@ -411,8 +551,15 @@ section {
   section {
     padding: 0px;
   }
+  section .pasarcapitulos li{
+    width: calc(96%/3);
+    float: left;
+    text-align: center;
+  }
 
-
+.contenedor1 li{
+font-size: 10px;
+}
 
   section .contenedor1 div {
     padding: 0px;

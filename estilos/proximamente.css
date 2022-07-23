@@ -6,7 +6,11 @@ body {
 }
 
 
+header{
+  position: fixed;
+  width: 100%;
 
+}
 header img {
   width: auto;
   height: 40px;

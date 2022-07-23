@@ -6,7 +6,11 @@ body {
 }
 
 
+header{
+  position: fixed;
+  width: 100%;
 
+}
 header img {
   width: auto;
   height: 40px;
@@ -289,7 +293,11 @@ section {
     height: 30px;
 
   }
-
+  header{
+    position: relative;
+    width: 100%;
+  
+  } 
 
   header .contenedor {
     flex-direction: column;

@@ -1,3 +1,7 @@
+* {
+  margin-bottom: 0px;
+}
+
 body {
   background-color: #141414;
   font-family: sans-serif;
@@ -5,11 +9,7 @@ body {
 
 }
 
-header{
-  position: fixed;
-  width: 100%;
 
-}
 
 header img {
   width: auto;
@@ -32,6 +32,11 @@ header .contenedor {
   margin: auto;
 }
 
+header{
+  position: fixed;
+  width: 100%;
+
+}
 
 
 main .contenedor {
@@ -86,25 +91,34 @@ nav a.active {
 
 
 
-
 /* portada */
 main .cover {
   font-size: 16px;
   min-height: 40.62em;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://www.formulatv.com/images/series/2000/2815-f.jpg);
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%), url(https://www.themoviedb.org/t/p/original/iD3AJxGuBPUpipRfPmVuRDKVqjZ.jpg);
   color: white;
   background-size: cover;
   background-position: top;
-
-  margin-bottom: 3.12em;
+  margin-bottom:50px ;
   display: flex;
   align-items: end;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+
+}
+
+
+section .cover .contenedor .titulo {
+  font-weight: bold;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+
+
 }
 
 .cover .contenedor {
   margin-bottom: 6.25em;
+
 }
 
 .cover .contenedor .titulo {
@@ -121,30 +135,103 @@ main .cover {
   margin-bottom: 1.25em;
 }
 
-.cover .boton {
-  background: rgba(0, 0, 0, 0.50);
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.87em;
-  color: #FFFFFF;
+
+.cover .contenedor1 i {
   margin-right: 1.25em;
-  cursor: pointer;
-  transition: .3s ease all;
-  font-size: 1.12em;
+  
 }
 
-.cover .contenedor i {
-  margin-right: 1.25em;
-}
-
-.cover .contenedor .boton:hover {
+.cover .contenedor1 .boton:hover {
   background-color: #FFFFFF;
   color: #000;
 }
 
+section .contenedor1 {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)0%, rgba(0, 0, 0, 0.5)100%);
 
-section .titulo:first-child {
+  padding-bottom: 60px;
+  padding-top: 20px;
+  border-radius: 3px;
+ 
+
+
+}
+
+section .contenedor1 div {
+  margin-top: 0px;
   padding-top: 0px;
+  text-align: center;
+  padding-bottom: 0px;
+
+}
+section .contenedor1 .tittle {
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-size: 10px;
+
+}
+
+
+
+
+section .contenedor1 iframe {
+  width: 90%;
+  height: 546px;
+  max-width: 940px;
+  max-height: 546px;
+  border-style:hidden;
+}
+
+
+
+
+
+
+
+
+section .pasarcapitulos .boton {
+  background: rgba(0, 0, 0, 0.50);
+  border: none;
+  border-radius: 5px;
+  padding: 0px;
+  color: #FFFFFF;
+  margin: 0px;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1em;
+  width: 100%;
+  height: 30px;
+
+}
+section .pasarcapitulos i {
+  padding: 5px;
+}
+
+section .pasarcapitulos a{
+  padding: 0px;
+    width: 90%;
+}
+
+section .pasarcapitulos li{
+  width: calc(95%/3);
+  float: left;
+  text-align: center;
+}
+
+
+
+section .contenedor .titulo {
+  padding-top: 80px;
+  text-align: start;
 }
 
 
@@ -170,8 +257,8 @@ main img:hover {
 }
 
 section img {
-  height: 200px;
-  width: 300px;
+  height: 150px;
+  width: 250px;
   padding: 10px;
   text-align: start;
   cursor: pointer;
@@ -179,6 +266,69 @@ section img {
 
 
 }
+
+/* esto sirve para convertir los div con imagenes en un carrusel  */
+.animes_nuevos,
+.destacadas,
+.series_nuevas,
+.peliculas_nuevas {
+  display: flex;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+}
+
+/* scroll personalizado */
+
+::-webkit-scrollbar {
+  height: 12px;
+
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 53, 53);
+  height: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+
+.titulo {
+  padding-top: 100px;
+}
+
+
+
+section {
+  padding-bottom: 50px;
+}
+
+
+section .pasarcapitulos .boton:hover {
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+section .pasarcapitulos li {
+
+  display: inline;
+
+}
+
+
+h3 {
+  padding-left: 8px;
+}
+
+
+
+
+
 
 .pie-pagina {
   width: 100%;
@@ -242,16 +392,7 @@ footer .red-social img:hover {
   transition: all 500ms;
 }
 
-/* esto sirve para convertir los div con imagenes en un carrusel  */
-.animes_nuevos,
-.destacadas,
-.series_nuevas,
-.peliculas_nuevas {
-  display: flex;
-  flex-wrap: wrap;
 
-
-}
 
 /* scroll personalizado */
 
@@ -287,67 +428,24 @@ section {
 /*------------------ Media Queries ---------------------------*/
 
 
+
 @media screen and (max-width: 800px) {
+
+
+  header{
+    position: relative;
+    width: 100%;
+  
+  }
   header .contenedor img {
     margin-bottom: 10px;
     height: 30px;
 
   }
-  header{
-    position: relative;
-    width: 100%;
-  
-  } 
 
-  header .contenedor {
-    flex-direction: column;
-    text-align: center;
+  main .cover{
+    margin-bottom: 0px;
   }
-
-
-  header .comtenedor a {
-    font-size: 12px;
-  }
-
-  header .contenedor a {
-    padding: 2px;
-    justify-content: center;
-  }
-
-  section .cover {
-    font-size: 14px;
-  }
-
-  .cover .contenedor .descripcion {
-    font-size: 14px;
-    max-width: 90%;
-  }
-
-  .cover .contenedor .titulo {
-    font-size: 18px;
-
-  }
-
-section .destacadas{
-  
-  justify-content: center;
-}
-  
-
-  section img {
-    
-    height: 190px;
-    width: 290px;
-    padding: 10px;
-   
-  }
-
-  section .titulo {
-    padding-top: 5px;
-
-  }
-
-
   header {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -368,26 +466,128 @@ section .destacadas{
     padding-left: 20px;
   }
 
-  
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
 
 
-  section .cover .contenedor.boton {
-    display: flex;
+  header .comtenedor a {
+    font-size: 12px;
+  }
 
+  header .contenedor a {
+    padding: 2px;
     justify-content: center;
   }
 
-  section .titulo:last-child {
-    padding-bottom: 60px;
+  section .cover .contenedor h1 {
+    font-size: 14px;
+  }
+
+  .cover .contenedor .descripcion {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+
+
+  section .contenedor1 {
+    margin-left: 1px;
+    margin-right: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #141414;
+    
+    font-size: 12px;
+
+  }
+
+  section .contenedor1 .pasarcapitulos .boton {
+
+    width: 10%;
+    height: 30px;
+    padding: 0px;
+    margin: 10px;
+    font-size: 15px;
+    
+
+
+
+  }
+  section .contenedor1 .pasarcapitulos .boton {
+
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    margin: 10px;
+    font-size: 15px;
+    
+
+
+
+  }
+  section .contenedor .titulo {
+    padding-top: 10px;
+  
+  }
+
+  section .contenedor1 .pasarcapitulos span {
+
+    font-size: 0px;
+    
+
+
+
+  }
+  section .contenedor1 .pasarcapitulos ul {
+    padding: 0px;
+  }
+
+
+  section {
+    padding: 0px;
+  }
+  section .pasarcapitulos li{
+    width: calc(96%/3);
+    float: left;
+    text-align: center;
+  }
+
+.contenedor1 li{
+font-size: 10px;
+}
+
+  section .contenedor1 div {
+    padding: 0px;
+  }
+
+  section .contenedor1 iframe {
+    width: 100%;
+    height: 306px;
+    max-width: 940px;
+    max-height: 546px;
   }
 
 
 
 
 
+
+
+  footer {
+    font-size: 12px;
+
+  }
+
   .pie-pagina .grupo-1 .box figure img {
-    width:90px;
-   
+    width: 90px;
+
 
 
   }
@@ -403,7 +603,7 @@ section .destacadas{
     text-align: center;
     color: White;
   }
-  
+
 
   .pie-pagina .grupo-1 {
     width: 80%;
@@ -414,18 +614,15 @@ section .destacadas{
     text-align: center;
     grid-gap: 10px;
     padding: 25px 0px;
-  
+
   }
+
   .pie-pagina .grupo-1 .box figure {
-    margin-left:8px ;
+    margin-left: 8px;
   }
-  
 
-
-
-  footer{
-    font-size: 12px;
-    
+  footer {
+    font-size: 12px
   }
-  
+
 }

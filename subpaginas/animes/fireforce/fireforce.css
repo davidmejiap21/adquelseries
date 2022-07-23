@@ -32,7 +32,11 @@ header .contenedor {
   margin: auto;
 }
 
+header{
+  position: fixed;
+  width: 100%;
 
+}
 
 
 
@@ -119,14 +123,7 @@ section .contenedor img {
 
 }
 
-section .contenedor .img {
-  width: 30%;
-}
 
-section .contenedor .texto {
-  width: 70%;
-  text-align: start;
-}
 
 section .contenedor .texto h1{
   text-align: start;
@@ -139,10 +136,14 @@ li {
   text-align: center;
   list-style: none;
   align-items: center;
-  
-
-
 }
+  section .pasarcapitulos i {
+    margin-right: 20px;
+    font-size: 20px;
+    }
+
+
+
 
 section {
   margin-top: 20px;
@@ -156,15 +157,6 @@ section .pasarcapitulos{
   margin-bottom: 20px;
   padding-top: 20px;
 padding-bottom: 50px;
-
-}
-
-
-
-
-section .pasarcapitulos i {
-margin-right: 20px;
-font-size: 20px;
 }
 section a {
   text-decoration: none;
@@ -272,6 +264,7 @@ footer .red-social img:hover {
 
 
 
+
 @media screen and (max-width: 1200px) {
   section .contenedor p {
     font-size: 13px;
@@ -339,8 +332,8 @@ footer .red-social img:hover {
 
   section .contenedor img {
     margin: 20px;
-    width: 180px;
-    height: 240px;
+    width: 140px;
+    height: 200px;
   
   }
 
@@ -371,6 +364,14 @@ footer .red-social img:hover {
    
    
   }
+  section .pasarcapitulos i {
+    margin-right: 10px;
+    font-size: 15px;
+    }
+    section .pasarcapitulos  {
+      margin-right: 10px;
+      font-size: 12px;
+      }
 
   section h1{
     font-size: 16px;
